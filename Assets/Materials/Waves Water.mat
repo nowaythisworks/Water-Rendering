@@ -116,6 +116,7 @@ Material:
     - Vector1_2433b6dcc39a4a5aa770d77e3e4d3f4c: 1
     - Vector1_36f61610401447a3b67e0fd2c26cdad3: 0.72
     - Vector1_37b29abdbc8c459297d2f38c8f0ab061: 5
+    - Vector1_501923743daa4a5e991b242e9f45d917: 0.15
     - Vector1_5faf92201eef4c9582ec0b4af41a01da: 2500
     - Vector1_8077cfd1e9d64246a068c842c68902ae: 1
     - Vector1_8f95ae11dd3f4098a2ecfa3a86165db4: 9.81
@@ -163,11 +164,13 @@ Material:
     - Color_8a70934ea9af402eb28f0dcd43bed497: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 0}
     - Color_dad7f7e67861437bb16de5cd6da49eda: {r: 1, g: 1, b: 1, a: 0}
     - Vector2_da31bd8c2f7d49689a9a43797c7f8aaf: {r: 20, g: 12, b: 0, a: 0}
-    - Vector2_f05ba7dbbec3428eb0f23feef29fdfe8: {r: -0.5, g: 0, b: 0, a: 0}
+    - Vector2_f05ba7dbbec3428eb0f23feef29fdfe8: {r: 0, g: 0, b: 0, a: 0}
+    - WaterDirection: {r: 0.25, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 0.22780348, g: 0.43053564, b: 0.745283, a: 0.5254902}
     - _Color: {r: 0.22780348, g: 0.43053564, b: 0.745283, a: 0.5254902}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _WaterDirection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8435593889387056078
 MonoBehaviour:
