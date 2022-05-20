@@ -50,10 +50,12 @@ public class ShipController : MonoBehaviour
 
         // simulate water bouyancy by ping ponging the ship up and down randomly and smoothly, starting at the minheight and ending at the maxheight (Lerping)
         float newHeight = Mathf.PingPong(Time.time, maxHeight - minHeight) + minHeight;
-        shipContents.transform.position = Vector3.Lerp(shipContents.transform.position, new Vector3(shipContents.transform.position.x, newHeight, shipContents.transform.position.z), Time.deltaTime * bounceSpeed);
+        shipContents.transform.position = Vector3.Slerp(shipContents.transform.position, new Vector3(shipContents.transform.position.x, newHeight, shipContents.transform.position.z), Time.deltaTime * bounceSpeed);
 
         // get the oceanWater shader, set the property "_WaterDirection" to the ship's forward direction
         Vector3 cPos = new Vector2(transform.position.z, -transform.position.x);
-        oceanWater.GetComponent<Renderer>().material.SetVector("WaterDirection", (startPos - cPos) / 4);
+        oceanWater.GetComponent<Renderer>().material.SetVector("WaterDirection", cPos / 4);
+
+        // randomly slerp the ship on the Vector3.forward axis, pingponging
     }
 }
